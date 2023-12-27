@@ -37,7 +37,7 @@
 ### Re-Order Buffer의 구성
 하나의 요소에서 86Bit를 사용, 이번 프로젝트에서 128개의 Re-Order Buffer가 존재하므로, 총 86x128 = 11008 Bit(FF) 사용<br>
 Re-Order Buffer는 4-Input(Decoder), 7-Motifiy(Issue), 7-Output(Issue)의 Register File 및 7-Channel 7-Output FIFO Memory의 특성을 가짐 
-|0~15 (16)|16~27 (12)|28~31 (4)|32~37 (6)|38~43 (6)|44~49 (6)|50~65 (16)|66~69 (4)|70~85 (16)|
+|0~15 (16)|16~25 (10)|26~29 (4)|30~35 (6)|36~41 (6)|42~47 (6)|48~63 (16)|64~67 (4)|68~83 (16)|
 |---|---|---|---|---|---|---|---|---|
 |PC|Micro-Op|Target Architecture Register|Target Temp Register|R1(Temp) Register|R2(Temp) Register|Value|Branch #|Last Completed PC|
 
